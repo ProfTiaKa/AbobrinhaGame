@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <p id="teste">
+
+        </p>
+        <p class="oie">
+                Teste
+        </p>
+        <p class="oie">
+                Arroz
+        </p>
+        <p class="oie">
+            Feijao
+
+        </p>
+        <h1>
+Teste de novo
+        </h1>
+        <h1>
+Tia Ka
+        </h1>
+
+
+        <!--PROJETO DE AULA-->
+
+        <div style="text-align: center;">
+            <img src="luffy1.jpg" id="myImage" style="width: 200px; height: 200px;">
+        </div>
+
+        <div class="card" style="float: left;"> <img src="luffy2.jpg" style="width: 100px; height: 100px;" onclick="document.getElementById('myImage').src='luffy2.jpg'">  </div>
+        <div class="card" style="float: left;"> <img src="luffy3.jpg" style="width: 100px; height: 100px;" onclick="document.getElementById('myImage').src='luffy3.jpg'">  </div>
+
+        <script>
+           document.getElementById("teste").innerHTML = "BEM VINDO AO PRIMEIRO HTML + JS"
+            document.getElementById("teste").style.fontSize = "25px"
+            document.getElementById("teste").style.color = "pink"
+
+            //ByClassName
+
+            var z = document.getElementsByClassName("oie")
+            for (i = 0; i < z.length; i++){
+                z[i].style.color = "purple"
+            }
+            // Tag
+            var x = document.getElementsByTagName("h1")
+            for (i = 0; i < x.length; i++){
+                x[i].style.color = "blue"
+            }
+
+
+
+        </script>
+    </body>
+</html>
